@@ -1,6 +1,14 @@
 import { useState, useEffect, useCallback } from 'react';
 import { UserService, User } from '../services/userService';
 
+// LARAVEL/BE -> ROUTE -> CONTROLLER -> MODEL -> CONTROLLER -> RESPONSE WITH ROUTE
+// REACT/FE -> SERVICES -> HOOKS -> COMPONENS [VALIDATE, CONDITION, ETC]
+
+// response schema json from backend
+// res.statusCode
+// res.message
+// res.data
+
 export function useUsers() {
   const [users, setUsers] = useState<User[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);

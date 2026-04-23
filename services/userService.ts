@@ -6,6 +6,13 @@ export interface User {
   email: string;
 }
 
+// laravel ednpoint
+// get : localhost:8000/api/users
+// get by id :localhost:8000/api/users/8
+// post : localhost:8000/api/users
+// update : localhost:8000/api/users/8
+// delete : localhost:8000/api/users/8
+
 export const UserService = {
   /**
    * Fetch a list of users
